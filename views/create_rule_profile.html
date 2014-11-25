@@ -1,0 +1,25 @@
+<div class="row profile">
+	<div class="profile-container">
+		<h2 class="title">{{'_CreateRuleProfile_' | i18n}}</h2>
+		<p>{{'_CreateRuleProfileNote_' | i18n}}</p>
+		<pc-steps currentStep="{{currentStep}}" finishedStep="{{finishedStep}}"></pc-steps>
+		
+		<form role="form">		
+			<h4>{{'_CreateChildDevice_' | i18n}}</h4>
+			<div class="form-group">
+				<input type="text" name="profileName" placeholder="{{'_PlaceHolderProfileName_' | i18n}}"/>
+				<p class="hint">{{'_HintProfileName_' | i18n}}</p>
+			</div>
+			
+			<div class="form-group">
+				<input type="checkbox" name="restriction"/>{{'_AgeRatingsAndRestrictions_' | i18n}}
+				<p class="hint">{{'_HintAgeRatingsAndRestrictions_' | i18n}}</p>
+			</div>			
+		
+			<div class="form-group">
+				<a class="btn btn-primary" ng-click="nextStep()">{{'_NextButton_' | i18n}}</a>
+			</div>
+			
+		</form>
+	</div>
+</div>

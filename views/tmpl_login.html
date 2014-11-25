@@ -1,0 +1,40 @@
+<form role="form">
+	<div class="error-message-container">	
+		<p class="error-message-login" ng-show="hasError">{{'_LoginError_' | i18n}}</p>
+	</div>	
+		
+		
+	
+	
+	<div class="input-group email-group">	
+	
+		<span class="input-group-addon">
+			<i class="fa fa-envelope-o"></i>
+		</span>
+		<input type="email" name="email" placeholder="{{'_PlaceHolderEmail_' | i18n}}" required="required"/>
+	</div>	
+		
+	<div class="input-group password-group">
+		<span class="input-group-addon">
+			<i class="fa fa-lock"></i>
+		</span><input type="password" name="password" placeholder="{{'_PlaceHolderPassword_' | i18n}}" required="required"/>
+	</div>	
+	
+	<p class="forgot-password">
+		<a href="#/password">{{'_ForgotPassword_' | i18n}}</a>
+	</p>
+	<div class="form-group">
+		<a class="btn btn-primary" ng-click="signIn(event)" >{{'_SignIn_' | i18n}}</a>
+	</div>
+	<div class="form-group">
+		<a class="btn btn-secondary" href="#/register">{{'_CreateAccount_' | i18n}}</a>		
+	</div>
+	<div class="form-group">
+		<a class="btn btn-facebook"><i class="fa fa-facebook"></i> {{'_FacebookSignIn_' | i18n}}</a>
+	</div>
+	<div class="form-group">
+		<a class="btn btn-google"><i class="fa fa-google-plus"></i> {{'_GoogleSignIn_' | i18n}}</a>
+	</div>
+</form>
+
+

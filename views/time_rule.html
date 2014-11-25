@@ -1,0 +1,12 @@
+<div class="row timerule-info">
+	<div class="time-rule-container">
+		<h2 class="title">{{'_TimeRuleTitle_' | i18n}}</h2>
+		<h3>{{'_ActiveTimeRuleSubTitle_' | i18n}}</h3>
+		<div class="time-rule" ng-repeat="timeRule in timeRules" >
+			<pc-time-rule timeRule="{{timeRule}}"></pc-time-rule>				
+		</div>
+		<div>
+			<a class="btn btn-default" ng-click="createTimeRule()">{{'_CreateTimeRuleButton_' | i18n}}</a>
+		</div>
+	</div>
+</div>

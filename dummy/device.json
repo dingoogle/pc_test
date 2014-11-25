@@ -1,0 +1,28 @@
+{
+    "result": {
+		"devices": [
+			{
+				"deviceId": 0,
+				"name": "Sammy's Device",
+				"description": "Device info",
+				"profileName": "XYZ MindMake Profile",
+				"enrolled": true
+			},
+			{
+				"deviceId": 1,
+				"name": "Ava's Device",
+				"description": "Ava Device info",
+				"profileName": "X MindMake Profile",
+				"enrolled": true
+			},
+			{
+				"deviceId": 2,
+				"name": "Oicq's Device",
+				"description": "Oicq Device info",
+				"profileName": "Y MindMake Profile",
+				"enrolled": false
+			}
+		]
+	}
+}
+

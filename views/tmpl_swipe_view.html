@@ -1,0 +1,22 @@
+<div class="row steps-wapper bg_{{curIndex}}">
+	<div class="steps-view" style="width:{{slideWidth}}px;overflow:hidden;">
+		<div class="scroller" style="width:{{scrollerWidth}}px;">
+			<div class="slide" style="width:{{slideWidth}}px;" >
+				<h2 class="title">{{'_LoginTitle_' | i18n}}</h2>
+			</div>
+			<div class="slide" style="width:{{slideWidth}}px;" >
+				<pc-steps currentStep="{{currentStep}}" finishedStep="{{finishedStep}}"></pc-steps>
+			</div>
+			<div class="slide" style="width:{{slideWidth}}px;" >				
+				<h2 class="title">
+					{{'_ThatIsEasy_' | i18n}}
+				</h2>
+			</div>
+		</div>
+	</div>
+	<div class="indicator" style="width:{{indicatorWidth}}px;">		
+		<div class="dotty">			
+		</div>
+		<span class="dot" ng-repeat="dot in dots" style="left:{{$index*20}}px;"></span>
+	</div>
+</div>

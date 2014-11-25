@@ -1,0 +1,25 @@
+<div class="container careerContainer" ng-controller="CareerPathController">
+	<div class="careerView viewSliding" style="width:{{(numColumns+1)*100 + 'px;'}}">
+		<div class="categoryContainer" ng-repeat="career in careerPaths">
+			<div class="categoryContainer_{{career.columns.length}} category_column_{{$index}}">
+				<div class="categoryTile {{career.enabled?'categoryContainer_title_enabled':'categoryContainer_title_disabled'}}"><span>{{career.category}}</span></div>
+				<div ng-repeat="column in career.columns" class="categoryColumn" >
+					<div class="careerTile {{column.enabled?'enabled column_enabled_0':'disabled column_disabled_0'}}" clickable='false'><span>{{column.category}}</span></div>
+					<div class="categoryEnabledColumn" style="-webkit-animation-name:careerShow{{column.columnIndx}};animation-name:careerShow{{column.columnIndx}};-moz-animation-name:careerShow{{column.columnIndx}};">
+					<div ng-repeat="itm in column.column" >
+					
+						<span class="careerTile {{itm.enabled?'enabled column_enabled_'+($index+1):'disabled column_disabled_'+($index+1)}}" career-item ng-if="itm.role" clickable="{{itm.enabled}}" data-career="{{itm}}"><span>{{itm.role}}</span></span>
+						<span class="careerTileBlank" ng-if="!itm.role"></span>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div ng-show="showAdjacentButton">
+		<div class="btnPrev" adjacent direction="prev" on-adjacent="adjacentTo(1)"></div>
+	</div>
+	<div ng-show="showAdjacentButton">
+		<div class="btnNext" adjacent direction="next" on-adjacent="adjacentTo(-1)"></div>
+	</div>
+</div>

@@ -1,0 +1,181 @@
+<div class="modal-head">
+	<div class="modal-head-button-container">
+		<button class="{{curTab==0?'modal-head-button-selected':'modal-head-button-unselected'}}" ng-click="curTab=0">
+			<sapn class="modal-head-button-inner ">Role Information</sapn>
+		</button>
+		
+		<button class="{{curTab==1?'modal-head-button-selected':'modal-head-button-unselected'}}" ng-click="curTab=1">
+			<sapn class="modal-head-button-inner ">Competencies</sapn>
+		</button>
+	</div>
+</div>
+
+<div class="modal-body">	
+	<div class="tab1" ng-show="curTab==0">
+		<h3 class="role modal-title">{{career.role}}</h3>
+		<h5 class="designation">Designation: {{career.designation}}</h5>
+		<div ng-if="career.hasDescription==true">
+			<h4 class="description-title"><img src="lib/image/ico_earth-description.png" class="description-image"/>Global Roles Description</h4>
+			<div bind-html-unsafe='career.description' class="description-detail"></div>
+		</div>
+		<div ng-if="career.hasSpecific==true">
+			<h4 class="description-title"><img src="lib/image/ico_description.png" class="description-image"/>FSGBU Specific Role Details</h4>
+			<div bind-html-unsafe='career.specific' class="description-detail"></div>
+		</div>
+		<!-- no used for now
+		<h4 class="description-title"><img src="lib/image/ico_training.png" class="description-image"></img>Training program required</h4>
+		<div class="description-detail">
+			<table class="description-table">
+				<tbody>
+					<tr class="description-table-th">
+						<th class="description-table-td1">Program Category</th>
+						<th class="description-table-td2">Program Name</th>
+						<th class="description-table-td3">Code Date</th>
+						<th class="description-table-td4">Methodology</th>
+						<th class="description-table-td5">Due Date</th>
+						<th class="description-table-td6">Estimate Duration</th>
+					</tr>
+					
+					<tr class="description-table-tr1">
+						<td>Industry</td>
+						<td>Capital Markets</td>
+						<td>U-GD-N2K-01</td>
+						<td>Classroom</td>
+						<td>6/6/2014</td>
+						<td>5Hours</td>
+					</tr>
+					
+					<tr class="description-table-tr2">
+						<td>Industry</td>
+						<td>Capital Markets</td>
+						<td>U-GD-N2K-01</td>
+						<td>Classroom</td>
+						<td>6/6/2014</td>
+						<td>5Hours</td>
+					</tr>
+					
+					<tr class="description-table-tr1">
+						<td>Industry</td>
+						<td>Capital Markets</td>
+						<td>U-GD-N2K-01</td>
+						<td>Classroom</td>
+						<td>6/6/2014</td>
+						<td>5Hours</td>
+					</tr>
+			
+				</tbody>
+			</table>
+		</div>
+		<h4 class="description-title"><img src="lib/image/ico_currentjob.png" class="description-image"></img>Current job openings in your region</h4>
+		<div class="description-detail">
+			<table class="description-table">
+				<tbody>
+					<tr class="description-table-th">
+						<th class="description-table2-td1">Name</th>
+						<th class="description-table2-td2">Requisition Number</th>
+						<th class="description-table2-td3">Description</th>
+					</tr>
+					
+					<tr class="description-table-tr1">
+						<td>Sybase</td>
+						<td>2014_30100</td>
+						<td class="description-table-over-td">Create/modify tables, indexes, and stored procedures and work with.....</td>
+					</tr>
+					
+					<tr class="description-table-tr2">
+						<td>Sybase</td>
+						<td>2014_30100</td>
+						<td class="description-table-over-td">Create/modify tables, indexes, and stored procedures and work with.....</td>
+					</tr>
+					
+					<tr class="description-table-tr1">
+						<td>Sybase</td>
+						<td>2014_30100</td>
+						<td class="description-table-over-td">Create/modify tables, indexes, and stored procedures and work with.....</td>
+					</tr>
+					
+					<tr class="description-table-tr2">
+						<td>Sybase</td>
+						<td>2014_30100</td>
+						<td class="description-table-over-td">Create/modify tables, indexes, and stored procedures and work with.....</td>
+					</tr>
+					
+					<tr class="description-table-tr1">
+						<td>Sybase</td>
+						<td>2014_30100</td>
+						<td class="description-table-over-td">Create/modify tables, indexes, and stored procedures and work with.....</td>
+					</tr>
+			
+				</tbody>
+			</table>
+		</div>
+		-->
+		<div class="fix-ie8">
+		</div>
+		
+	</div>
+	
+	<div class="tab2" ng-show="curTab==1">
+		<h3 class="role modal-title">{{career.role}}</h3>
+		<h5 class="designation">Designation: {{career.designation}}</h5>
+		
+		<div class="{{hasCanvas?'hidden':''}} competencyLegend"><img src="lib/image/pic_competencies.png"/></div>
+		<h4 style="{{hasCanvas?'text-align:center':'text-align:left'}}">{{career.competency_1.title}}</h4>
+		<div class="radar1">
+			<radar-chart class="{{hasCanvas?'':'hidden'}}" data-src="competency_1"></radar-chart>		
+		
+	
+			<div class="{{hasCanvas?'hidden':''}}">				
+				<div class="competencyBar" ng-repeat="bar in bar1">
+					<div class="bar bar_{{bar.value}} {{$index%2==0?'even':'odd'}}"><span class="barVal">{{bar.value}}</span> {{bar.label}}</div>
+				</div>			
+			</div>	
+				
+			<!-- only one item in the radar chart, no legend for now
+			<ul>
+				<ol><span class="icon_std"></span>STANDARD SKILL LEVEL</ol>
+				<ol><span class="icon_mine"></span>MY SKILL LEVEL</ol>
+			</ul>
+			-->
+		</div>
+	
+		
+		<h4 style="{{hasCanvas?'text-align:center':'text-align:left'}}">{{career.competency_2.title}}</h4>
+		
+		<div class="radar2">
+			<radar-chart class="{{hasCanvas?'':'hidden'}}" data-src="competency_2"></radar-chart>
+
+			<div class="{{hasCanvas?'hidden':''}}">				
+				<div class="competencyBar " ng-repeat="bar in bar2">
+					<div class="bar bar_{{bar.value}} {{$index%2==0?'even':'odd'}}"><span class="barVal">{{bar.value}}</span> {{bar.label}}</div>
+				</div>						
+			</div>	
+		
+			<!-- only one item in the radar chart, no legend for now
+			<ul>
+				<ol><span class="icon_std"></span>STANDARD SKILL LEVEL</ol>
+				<ol><span class="icon_mine"></span>MY SKILL LEVEL</ol>
+			</ul>
+			-->
+		</div>
+
+		<div class="tab2Test">
+			<p>All roles have two types of competencies The first are called "professional competencies," these are the core skills and  behaviours 
+			that are required for all roles.  in addition to this, each individual role has its own role based competencies which are unique to that particular role. 
+			The numbers next to the competency represent the mastery level required;  "1" signifies Master level and "5" signifies fundamental.</p>
+			
+			<p>Please speak to your learning partner on how to improve your current competency levels. </p>
+		</div>
+		
+		<div class="fix-ie8">
+		</div>
+		
+	</div>
+</div>
+
+<div class="modal-foot opacity-panel">
+	<button class="btn btn-close btn-confirm" ng-click="ok()">Confirm to select the role</button>
+	<button class="btn btn-close btn-cancel" ng-click="cancel()">Cancel</button>
+</div>
+
+

@@ -1,0 +1,55 @@
+{
+    "role": "Account Executive",
+    "designation": "Manager",
+    "description": "<p>Manages a mid-sized to large global or regional account and entails the group responsibility towards the client. Develops long-term intimacy with client, has overall accountability for account and group target revenues, leveraging and performing cross-discipline. Understands the key influencers within the client organization, quickly identifies client culture and balances professional manner to suit client requirements.</p>",
+    "specific": "",
+    "competency_1": {
+        "title": "Professional Competencies",
+        "skill": [
+            {"label": "Foundation competencies", "value":1},
+            {"label": "People Leadership", "value":2},
+            {"label": "Client Acquisition & Development", "value":1},
+            {"label": "Technology Awareness and Leveraging", "value":2},
+            {"label": "Service & Delivery", "value":2},
+            {"label": "Innovation & Capability Growth", "value":2},
+            {"label": "Business Leadership", "value":2}
+        ]
+    },
+    "competency_2": {
+        "title": "Role Specific Competencies",
+        "skill": [
+            {"label": "Developing Business Acumen on Client/Industry ", "value":2},
+            {"label": "Portfolio Focus", "value":2},
+            {"label": "Targeting of clients", "value":1},
+            {"label": "Leveraging Marketing", "value":2},
+            {"label": "Political Agility", "value":1},
+            {"label": "Solving complex clients situations", "value":2},
+            {"label": "Opportunity Creation and Qualification", "value":1},
+            {"label": "Opportunity Development and Closing", "value":1},
+            {"label": "Analyzing Opportunity KPIs", "value":2},
+            {"label": "Opportunity Team Management", "value":2},
+            {"label": "BU go to market", "value":0},
+            {"label": "Portfolio Management", "value":0},
+            {"label": "Sales Planning ", "value":0},
+            {"label": "Leveraging Marketing", "value":0},
+            {"label": "BU Funnel creation", "value":0},
+            {"label": "Challenging Opportunity Plans", "value":0},
+            {"label": "Analyzing Sales KPIs", "value":0},
+            {"label": "Sales Team Management", "value":0},
+            {"label": "Developing Business Acumen on Client/Industry ", "value":0},
+            {"label": "Bid Resourcing ", "value":0},
+            {"label": "Cost management ", "value":0},
+            {"label": "Risk management", "value":0},
+            {"label": "Sales lead interaction", "value":0},
+            {"label": "Political Agility", "value":0},
+            {"label": "Solving complex clients situations", "value":0},
+            {"label": "Bid Team Management", "value":0},
+            {"label": "Developing Business Acumen on Client/Industry ", "value":0},
+            {"label": "Quality Management", "value":0},
+            {"label": "Sales Operations", "value":0},
+            {"label": "Cost Management", "value":0},
+            {"label": "Sales Operations Team Management", "value":0}
+        ]
+    }
+}
+

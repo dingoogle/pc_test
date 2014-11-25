@@ -1,0 +1,15 @@
+<div class="main-menu-container {{iOS7?'menu47':''}} {{isMenuOut?'menu-out':'menu-in'}}">
+	<div class="btn-group main-menu">		
+		<ul>		
+			<li><a ng-click="navigateTo('/dashboard')"><i class="fa fa-dashboard"></i> {{'_MenuDashBoard_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/timerule')"><i class="fa fa-clock-o"></i> {{'_MenuTimeRules_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/timeout')"><i class="fa fa-ban"></i> {{'_MenuTimeouts_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/report')"><i class="fa fa-table"></i> {{'_MenuReporting_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/share')"><i class="fa fa-share-alt"></i> {{'_MenuShare_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/account')"><i class="fa fa-gear"></i> {{'_MenuAccount_' | i18n}}</a></li>
+			<li><a ng-click="navigateTo('/support')"><i class="fa fa-support"></i> {{'_MenuSupport_' | i18n}}</a></li>
+			<li><a ng-click="logout()"><i class="fa fa-sign-out"></i> {{'_MenuLogout_' | i18n}}</a></li>
+		</ul>
+	</div>
+	<div class="menu-toggle"><a ng-click="toggleMenu()"><i class="fa fa-chevron-left {{isMenuOut?'menu-out':'menu-in'}}"></i></a></div>
+</div>

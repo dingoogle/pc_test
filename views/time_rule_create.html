@@ -1,0 +1,58 @@
+<div class="row timerule-info">
+	<div class="time-rule-container">
+		<h2 class="title">{{'_CreateYourTimeRuleTitle_' | i18n}}</h2>
+		
+		<div class="form-group">			
+			<div class="btn-group dropdown-select" dropdown>
+				<button type="button" class="btn dropdownWords">{{'_PlaceHolderSelectProfile_' | i18n}} </button>
+				<button type="button" class="btn dropdown-toggle dropdownIcon">
+				   <span class="caret"></span>
+				   <span class="sr-only"></span>
+				 </button>
+				 <ul class="dropdown-menu">		
+					<li ng-repeat="opt in options" ng-click="updateOption($index)">{{opt.profileName}}</li>
+				</ul>
+			</div>			
+		</div>
+		
+		<div class="form-group">	
+			<label>{{'_StartTimeLabel_' | i18n}}</label>			
+			<input type="datetime-local" name="startTime" required="required"/>	
+		</div>
+		
+		<div class="form-group">	
+			<label>{{'_EndTimeLabel_' | i18n}}</label>			
+			<input type="datetime-local" name="endTime" required="required"/>	
+		</div>
+		
+		<div class="form-group">					
+			<input type="checkbox" name="allday"/>	<label>{{'_CheckBoxAllDay_' | i18n}}</label>				
+			<input type="checkbox" name="recurring"/>	<label>{{'_CheckBoxRecurring_' | i18n}}</label>	
+		</div>
+		
+		<div class="form-group">	
+			<label>{{'_NameYourTimeRule_' | i18n}}</label>			
+			<input type="text" name="timeRuleName" placeholder="{{'_PlaceHolderTimeRuleName_' | i18n}}" required="required"/>	
+			<p>{{'_HintTimeRuleName_' | i18n}}</p>
+		</div>
+		
+		<div class="form-group">	
+			<label>{{'_AssignToChildDevice_' | i18n}}</label>			
+			<div class="btn-group dropdown-select" dropdown>
+				<button type="button" class="btn dropdownWords">{{'_SelectChildDevice_' | i18n}} </button>
+				<button type="button" class="btn dropdown-toggle dropdownIcon">
+				   <span class="caret"></span>
+				   <span class="sr-only"></span>
+				 </button>
+				 <ul class="dropdown-menu">		
+					<li ng-repeat="opt in options" ng-click="updateOption($index)">{{opt.profileName}}</li>
+				</ul>
+			</div>		
+			<p>{{'_HintSelectChildDevice_' | i18n}}</p>
+		</div>
+		
+		<div>
+			<a class="btn btn-default" ng-click="createTimeRule()">{{'_CreateTimeRuleButton_' | i18n}}</a>
+		</div>
+	</div>
+</div>

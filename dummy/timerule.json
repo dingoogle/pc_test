@@ -1,0 +1,28 @@
+{
+    "result": {
+		"timeRules":[
+			{
+				"ruleName": "Ava's Bedtime",
+				"start": "Sun, Nov.1, 2014, 6:00PM",
+				"duration": "1Hour",
+				"happensOn": "Daily",
+				"end": "No end date"
+			},
+			{
+				"ruleName": "Homework",
+				"start": "Sun, Nov.1, 2014, 6:00PM",
+				"duration": "1Hour",
+				"happensOn": "Weekdays Only",
+				"end": "No end date"
+			},
+			{
+				"ruleName": "Holiday",
+				"start": "Sun, Nov.1, 2014, 6:00AM",
+				"duration": "14Hour",
+				"happensOn": "Weekend Only",
+				"end": "No end date"
+			}
+		]
+	}
+}
+

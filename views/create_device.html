@@ -1,0 +1,34 @@
+<div class="row device">
+	<div class="device-container">
+		<h2 class="title">{{'_CreateChildDevice_' | i18n}}</h2>
+		<p>{{'_CreatedAccountGreat_' | i18n}}</p>
+		<pc-steps currentStep="{{currentStep}}" finishedStep="{{finishedStep}}"></pc-steps>
+		
+		<form role="form">		
+			<h4>{{'_CreateChildDevice_' | i18n}}</h4>
+			<div class="form-group">
+				<input type="text" placeholder="{{'_PlaceHolderDeviceName_' | i18n}}"/>
+				<p class="hint">{{'_HintDeviceName_' | i18n}}</p>
+			</div>
+			
+			<div class="form-group">
+				<date-picker placeholder="{{'_PlaceHolderBirthday_' | i18n}}"></date-picker>
+				<p class="hint">{{'_HintBirthday_' | i18n}}</p>
+			</div>
+			
+			<h4>{{'_CreateRulesProfie_' | i18n}}</h4>
+			<div class="form-group">
+				<input type="text" name="profileName" placeholder="{{'_PlaceHolderProfileName_' | i18n}}"/>
+				<p class="hint">{{'_HintProfileName_' | i18n}}</p>
+			</div>
+			<p>{{'_CreateRulesProfieNote_' | i18n}}</p>
+			<div class="form-group">
+				<a class="btn btn-primary" ng-click="createProfile()">{{'_CreateProfieButton_' | i18n}}</a>
+			</div>
+			<h4>{{'_CreateOwnProfie_' | i18n}}</h4>
+			<div class="form-group">
+				<a class="btn btn-primary" ng-click="createMyProfile()">{{'_NextButton_' | i18n}}</a>
+			</div>
+		</form>
+	</div>
+</div>

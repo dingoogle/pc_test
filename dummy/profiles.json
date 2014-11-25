@@ -1,0 +1,85 @@
+{
+    "result":{
+		"profiles": [
+			{	
+				"profileName": "XYZ MindMake Profile",
+				"description": "XYZ MindMake Profile does something aa bb cc.",
+				"restrictions": [
+					{"label": "FaceTime", "enabled": true},
+					{"label": "In-App Purchase", "enabled": false},
+					{"label": "Download Apps", "enabled": true},
+					{"label": "Siri", "enabled": false},
+					{"label": "Camera", "enabled": true},
+					{"label": "Game Center", "enabled": true},
+					{"label": "YouTube", "enabled": true},
+					{"label": "Twitter", "enabled": true}
+				],
+				"ratings": [
+					{"label": "App", "value": "8+"},
+					{"label": "TV", "value": "12+"},
+					{"label": "Movies", "value": "12A"},
+					{"label": "Music", "value": "Clean"}
+				],
+				"advanced": [
+					{"label": "Photo Streams", "enabled": true},
+					{"label": "Shared Photo Streams", "enabled": true},
+					{"label": "Screen Capture", "enabled": true},
+					{"label": "Siri while device locked", "enabled": true}
+				]
+			},
+			{	
+				"profileName": "X MindMake Profile",
+				"description": "X MindMake Profile does something aa bb cc.",
+				"restrictions": [
+					{"label": "FaceTime", "enabled": true},
+					{"label": "In-App Purchase", "enabled": false},
+					{"label": "Download Apps", "enabled": false},
+					{"label": "Siri", "enabled": true},
+					{"label": "Camera", "enabled": true},
+					{"label": "Game Center", "enabled": false},
+					{"label": "YouTube", "enabled": true},
+					{"label": "Twitter", "enabled": true}
+				],
+				"ratings": [
+					{"label": "App", "value": "8+"},
+					{"label": "TV", "value": "8+"},
+					{"label": "Movies", "value": "12A"},
+					{"label": "Music", "value": "Clean"}
+				],
+				"advanced": [
+					{"label": "Photo Streams", "enabled": false},
+					{"label": "Shared Photo Streams", "enabled": false},
+					{"label": "Screen Capture", "enabled": false},
+					{"label": "Siri while device locked", "enabled": false}
+				]
+			},
+			{	
+				"profileName": "Y MindMake Profile",
+				"description": "Y MindMake Profile does something aa bb cc.",
+				"restrictions": [
+					{"label": "FaceTime", "enabled": true},
+					{"label": "In-App Purchase", "enabled": false},
+					{"label": "Download Apps", "enabled": false},
+					{"label": "Siri", "enabled": true},
+					{"label": "Camera", "enabled": false},
+					{"label": "Game Center", "enabled": true},
+					{"label": "YouTube", "enabled": false},
+					{"label": "Twitter", "enabled": true}
+				],
+				"ratings": [
+					{"label": "App", "value": "12+"},
+					{"label": "TV", "value": "12+"},
+					{"label": "Movies", "value": "12A"},
+					{"label": "Music", "value": "Clean"}
+				],
+				"advanced": [
+					{"label": "Photo Streams", "enabled": true},
+					{"label": "Shared Photo Streams", "enabled": false},
+					{"label": "Screen Capture", "enabled": true},
+					{"label": "Siri while device locked", "enabled": false}
+				]
+			}
+		]
+	}
+}
+

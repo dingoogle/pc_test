@@ -1,0 +1,46 @@
+<form role="form">
+	<div class="error-message-container">	
+		<p class="error-message-register" ng-show="hasError">{{'_RegisterError_' | i18n}}</p>
+	</div>
+	
+	<div class="input-group first-name-group">		
+		<span class="input-group-addon">
+			<i class="fa fa-user"></i>
+		</span>
+		<input type="text" name="firstName" placeholder="{{'_PlaceHolderFirstName_' | i18n}}"/>
+	</div>	
+	<div class="input-group last-name-group">		
+		<span class="input-group-addon">
+			<i class="fa fa-user"></i>
+		</span>
+		<input type="text" name="lastName" placeholder="{{'_PlaceHolderLastName_' | i18n}}"/>
+	</div>	
+	
+	<div class="input-group email-group">		
+		<span class="input-group-addon">
+			<i class="fa fa-envelope"></i>
+		</span>
+		<input type="email" name="email" placeholder="{{'_PlaceHolderEmail_' | i18n}}" required="required"/>
+	</div>
+	
+	<div class="input-group password-group">		
+		<span class="input-group-addon">
+			<i class="fa fa-lock"></i>
+		</span>
+		<input type="password" name="password" placeholder="{{'_PlaceHolderPassword_' | i18n}}"/>
+	</div>
+	
+	<div class="input-group">		
+		<div class="checkbox">
+		  <label>
+		  <input type="checkbox" name="tnc"/>{{'_T&CCheck_' | i18n}}
+		  </label>
+	   </div>
+	</div>
+	<div class="form-group">
+		<a class="btn btn-primary" ng-click="createAccount(event)">{{'_CreateAccount_' | i18n}}</a>
+	</div>
+	<div class="form-group">
+		<a class="btn btn-default" href="#/login">{{'_BackToSignIn_' | i18n}}</a>
+	</div>			
+</form>

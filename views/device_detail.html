@@ -1,0 +1,74 @@
+<div class="row device">
+	<div class="device-container">
+		<h2 class="title">{{'_DevicesAndProfiles_' | i18n}}</h2>
+		
+		<div class="device-info">
+			<p>{{'_ChildDevice_' | i18n}}</p>
+		
+			<div>
+				<img ng-src="{{device.portrait}}"/>
+			</div>
+			<div>
+			<h5>{{device.name}}</h5>
+			<p>{{'_Age_' | i18n}}{{device.age}}</p>
+			<p class="{{device.enrolled?'enrolled': ''}}">{{'_DeviceEnrolled_' | i18n}}</p>
+			</div>
+		</div>	
+		<a class="btn btn-default" ng-if="device.enrolled" ng-click="editDevice()">{{'_EditButton_' | i18n}}</a>
+		<a class="btn btn-warning" ng-if="device.enrolled"ng-click="deleteDevice()">{{'_DeleteButton_' | i18n}}</a>
+		<a class="btn btn-primary" ng-if="!device.enrolled" ng-click="enrollDevice()">{{'_EnrollButton_' | i18n}}</a>
+		
+		
+		<h4>{{'_RulesProfile_' | i18n}}</h4>
+		<div class="profile-info">
+			<div class="form-group">
+				<div class="btn-group dropdown-select" dropdown>
+					<button type="button" class="btn dropdownWords">{{profileName}} </button>
+					<button type="button" class="btn dropdown-toggle dropdownIcon">
+					   <span class="caret"></span>
+					   <span class="sr-only"></span>
+					 </button>
+					 <ul class="dropdown-menu">		
+						<li ng-repeat="opt in options" ng-click="updateOption($index)">{{opt.profileName}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<h4>{{'_TimeRules_' | i18n}}</h4>
+		<div ng-if="device.timeRules.length" class="timerule-info">
+			
+			<div class="time-rule" ng-repeat="timeRule in device.timeRules" >
+				<pc-time-rule timeRule="{{timeRule}}"></pc-time-rule>				
+			</div>
+		</div>		
+		<a class="btn btn-primary" ng-click="addTimeRule()">{{'_AddTimeRuleButton_' | i18n}}</a>
+		<a ng-if="!device.timeRules.length" class="btn btn-default" ng-click="createTimeRule()">{{'_CreateTimeRuleButton_' | i18n}}</a>
+	
+		
+		<h4>{{'_Timeouts_' | i18n}}</h4>
+		<div class="timeout-info" ng-if="device.timeouts">
+			<div>
+			<p>{{'_TimeoutStart_' | i18n}}{{device.timeouts.start}}</p>
+			<p>{{'_TimeoutEnd_' | i18n}}{{device.timeouts.end}}</p>
+			<p>{{'_TimeoutDuration_' | i18n}}{{device.timeouts.duration}}</p>
+			<p>{{'_TimeoutProfile_' | i18n}}{{device.timeouts.profile}}</p>
+			</div>
+			
+		</div>
+		<a class="btn btn-default" ng-click="editTimeRule(timeRule)">{{'_EditButton_' | i18n}}</a>
+		<a class="btn btn-warning" ng-click="deleteTimeRule(timeRule)">{{'_DeleteButton_' | i18n}}</a>
+		<a class="btn btn-primary" ng-click="addTimeout()">{{'_AddTimeoutButton_' | i18n}}</a>
+			
+		<a ng-if="!device.timeouts" class="btn btn-default" ng-click="createTimeRule()">{{'_CreateTimeRuleButton_' | i18n}}</a>
+		
+		
+		
+
+		<a class="btn btn-primary" ng-click="createMyProfile()">{{'_NextButton_' | i18n}}</a>
+
+		
+		
+		
+	</div>
+</div>

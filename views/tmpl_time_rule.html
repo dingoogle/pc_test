@@ -1,0 +1,12 @@
+<div>
+	<div>
+		<h5>{{timerule.ruleName}}</h5>
+		<p>{{'_TimeRuleStart_' | i18n}}{{timerule.start}}</p>
+		<p>{{'_TimeRuleDuration_' | i18n}}{{timerule.duration}}</p>
+		<p>{{'_TimeRuleHappensOn_' | i18n}}{{timerule.happensOn}}</p>
+		<p>{{'_TimeRuleEnd_' | i18n}}{{timerule.end}}</p>
+	</div>
+	<a class="btn btn-default" ng-click="editTimeRule()">{{'_EditButton_' | i18n}}</a>
+	<a class="btn btn-warning" ng-click="deleteTimeRule()">{{'_DeleteButton_' | i18n}}</a>
+</div>
+

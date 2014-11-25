@@ -1,0 +1,79 @@
+{
+    "result": {
+		"devices": [
+			{
+				"deviceId": 0,
+				"name": "Sammy's Device",
+				"portrait": "img/head1.jpg",
+				"age": 9,
+				"description": "Device info",
+				"profileName": "XYZ MindMake Profile",
+				"enrolled": true,
+				"timeRules": [
+					{
+						"ruleName": "Sammy's Bedtime",
+						"start": "Sun, Nov.1, 2014, 6:00PM",
+						"duration": "1Hour",
+						"happensOn": "Daily",
+						"end": "No end date"
+					},
+					{
+						"ruleName": "Homework",
+						"start": "Sun, Nov.1, 2014, 6:00PM",
+						"duration": "1Hour",
+						"happensOn": "Weekdays Only",
+						"end": "No end date"
+					}
+				],
+				"timeouts": {
+					"start": "Sun, Nov.1, 2014, 6:00PM",
+					"end": "Sun, Nov.1, 2014, 7:00PM",
+					"duration": "1Hour",
+					"profile": "XYZ MindMake Profile"
+				}
+			},
+			{
+				"deviceId": 1,
+				"name": "Ava's Device",
+				"portrait": "img/head2.jpg",
+				"age": 6,
+				"description": "Ava Device info",
+				"profileName": "X MindMake Profile",
+				"enrolled": true,
+				"timeRules": [
+					{
+						"ruleName": "Ava's Bedtime",
+						"start": "Sun, Nov.1, 2014, 6:00PM",
+						"duration": "1Hour",
+						"happensOn": "Daily",
+						"end": "No end date"
+					},
+					{
+						"ruleName": "Homework",
+						"start": "Sun, Nov.1, 2014, 6:00PM",
+						"duration": "1Hour",
+						"happensOn": "Weekdays Only",
+						"end": "No end date"
+					}
+				],
+				"timeouts": {
+					"start": "Sun, Nov.1, 2014, 6:00PM",
+					"end": "Sun, Nov.1, 2014, 7:00PM",
+					"duration": "1Hour",
+					"profile": "XYZ MindMake Profile"
+				}
+			},
+			{
+				"deviceId": 2,
+				"name": "Oicq's Device",
+				"portrait": "img/head3.jpg",
+				"age": 12,
+				"description": "Oicq Device info",
+				"profileName": "Y MindMake Profile",
+				"enrolled": false,
+				"timeRules": [],
+				"timeouts": null
+			}
+		]
+	}
+}

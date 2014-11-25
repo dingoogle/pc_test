@@ -1,0 +1,21 @@
+<div class="helpPane {{showHelpPane==true?'':'hidden'}}">
+	<div class="mask"></div>
+	<div class="paneContainer">
+		<!--
+		<div class="horizontalRuler"><span>Role Groupings</span></div>
+		<div class="verticalRuler"><span>Roles</span></div>
+		<div class="verticalArrow"><span>Levels</span></div>
+		<div class="btnUnderstand">I Understand</div>
+		<div class="btnWelcome">Welcome to the Career Framework landing page, below you will find information on the roles that exist within FS GBU, by clicking on a role you will be able to see; a description of the role, the skills and competencies required for the role and recommended designations.</div>
+		-->
+		<div class="horizontalRuler" style="left:{{sheetPos.x}}px;top:{{sheetPos.y+10}}px; width:{{sheetPos.w}}px;"><div class="horizontalRulerLeft"></div><span>Role Groupings</span><div class="horizontalRulerRight"></div></div>
+		<div class="verticalRuler" style="left:{{sheetPos.x<32?sheetPos.x:sheetPos.x-32}}px;top:{{sheetPos.y + 90}}px; height:76px;"><span>Roles</span></div>
+		<div class="verticalArrow" style="left:{{sheetPos.x<32?sheetPos.x:sheetPos.x-32}}px;top:{{sheetPos.y + 175}}px; height:400px;"><span>Levels</span></div>
+		<div class="helpInfo" style="left:{{sheetPos.x+50}}px;top:{{sheetPos.y + 175}}px; width:{{sheetPos.w-100}}px;">
+			<p>
+				This is  Career Framework landing page, Here you will find information on the roles that exist within FS GBU, by clicking on a role you will be able to see; a description of the role, the skills and competencies required for the role and recommended designations.
+			</p>
+			<div class="btnUnderstand">I Understand</div>
+		</div>
+	</div>
+</div>

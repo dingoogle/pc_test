@@ -1,0 +1,17 @@
+<div class="row timeout-info">
+	<div class="timeout-container">
+		<h2 class="title">{{'_TimeoutTitle_' | i18n}}</h2>
+		<h3>{{'_TimeoutSubTitle_' | i18n}}</h3>
+		<p>{{'_TimeoutDescription_' | i18n}}</p>
+		<h4>{{'_TimeoutStartBy_' | i18n}}</h4>
+		<div class="time-rule" ng-repeat="timeRule in timeRules" >
+			<pc-time-rule timeRule="{{timeRule}}"></pc-time-rule>				
+		</div>
+		
+		<div class="form-group" ng-repeat="device in devices">
+			<a class="btn btn-default" ng-click="showDeviceDetail(device)">{{device.name}}</a>
+		</div>
+		
+		
+	</div>
+</div>
