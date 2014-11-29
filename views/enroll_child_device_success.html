@@ -1,16 +1,20 @@
 <div class="row device">
+	<!-- Modified By S Start -->
+	<!-- TODO:1.Congratulation
+			  2.Steps icon
+			  3.Title -->
+	<h4 class="device-greeting">{{'_EnrollCongratulations_' | i18n}}</h4>
 	<div class="device-container">
-		<h2 class="title">{{'_CreateRulesProfileAndEnroll_' | i18n}}</h2>
-	
-		<h4>{{'_EnrollCongratulations_' | i18n}}</h4>
+		<!-- <h2 class="title">{{'_CreateRulesProfileAndEnroll_' | i18n}}</h2> -->
+		<hr class="diliver"/>
 		<pc-steps currentStep="{{currentStep}}" finishedStep="{{finishedStep}}"></pc-steps>
 		
 		<p>{{'_CreateRulesProfileAndEnrollGreat_' | i18n}}</p>
-		<p>{{'_EnjoyYourParentalControls_' | i18n}}</p>
-		
-		<div class="form-group">
-			<a class="btn btn-primary" ng-click="showDashboard()">{{'_MyDashboardButton_' | i18n}}</a>
-		</div>
-
+		<p class="device-enjoy">{{'_EnjoyYourParentalControls_' | i18n}}</p>
+		<hr class="diliver"/>
 	</div>
+	<div class="form-group">
+		<a class="btn btn-primary" ng-click="showDashboard()">{{'_MyDashboardButton_' | i18n}}</a>
+	</div>
+	<!-- Modified By S End -->
 </div>

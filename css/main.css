@@ -795,5 +795,109 @@ fieldset[disabled] .btn-google:hover{
 	background-color:#fff
 }
 
+/* Add By S Start*/
+.btn-next{
+	color:#fff;
+	background-color:#418AB8;
+	border-color:#418AB8;
+}
+.btn-next.active,
+.btn-next:active,
+.btn-next:focus,
+.btn-next:hover,
+.open>.dropdown-toggle.btn-next{
+	color:#fff;
+	background-color:#3A7CA6;
+	border-color:#3A7CA6;
+}
+.btn-next.active,
+.btn-next:active,
+.open>.dropdown-toggle.btn-next{
+	background-image:none
+}
+.btn-next.disabled,
+.btn-next.disabled.active,
+.btn-next.disabled:active,
+.btn-next.disabled:focus,
+.btn-next.disabled:hover,
+.btn-next[disabled],
+.btn-next[disabled].active,
+.btn-next[disabled]:active,
+.btn-next[disabled]:focus,
+.btn-next[disabled]:hover,
+fieldset[disabled] .btn-next,
+fieldset[disabled] .btn-next.active,
+fieldset[disabled] .btn-next:active,
+fieldset[disabled] .btn-next:focus,
+fieldset[disabled] .btn-next:hover{
+	background-color:#3A7CA6;
+	border-color:#3A7CA6
+}
+.btn-next .badge{
+	color:#3A7CA6;
+	background-color:#fff
+}
 
+.enroll-child-device, .enroll-child-device-success{
+	background-color: #F7F7F7;
+}
+
+.enroll-child-device .device-container,.enroll-child-device-success .device-container{
+	background-color: #fff;
+}
+.device-greeting{
+	font-size: 1.2em;
+	padding: 10px 30px;
+	color: #bfbfbf;
+	text-align: center;
+}
+
+h4.device-greeting{
+	font-size:1.4em;
+	padding: 20px 30px;
+}
+
+.device-steps-title{
+	text-align: center;
+	font-weight: normal;
+	padding: 10px;
+}
+
+.diliver{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border-top: 1px solid #eee;
+}
+
+.steps .diliver{
+	margin: 10px 0px 0px 45px;
+}
+
+.steps h4:not(:first-child){
+	padding-top: 10px;
+}
+
+.steps hr:last-child{
+	margin-top: 20px;
+}
+
+.enroll-child-device-success .device-container p{
+	margin:20px;
+}
+
+.device-steps li{
+	color: #8E8E8E;
+	margin: 15px auto;
+}
+
+.device-tips{
+	margin: 10px 20px 20px 20px;
+}
+
+.device-enjoy{
+	font-size: 1.2em;
+	color: #bfbfbf;
+}
+/* Add By S End*/
 /*modify test -- R again*/
+
