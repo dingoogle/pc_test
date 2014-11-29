@@ -1,21 +1,24 @@
 <div class="row device">
+	<!-- Modified By S Start -->
+	<!-- TODO:Move the title to title bar -->
 	<div class="device-container">
-		<h2 class="title">{{'_EnrollChildDevice_' | i18n}}</h2>
-		<p>{{'_EnrollChildDeviceGreat_' | i18n}}</p>
+		<!-- <h2 class="title">{{'_EnrollChildDevice_' | i18n}}</h2> -->
+		<p class="device-greeting">{{'_EnrollChildDeviceGreat_' | i18n}}</p>
 		
 	
-		<h4>{{'_DeviceEnrollInstructions_' | i18n}}</h4>
-		<ol>
+		<h4 class="device-steps-title">{{'_DeviceEnrollInstructions_' | i18n}}</h4>
+		<hr class="diliver"/>
+		<ol class="device-steps">
 		<li>{{'_InstructionsStep1_' | i18n}}</li>
-		<li>{{'_InstructionsStep1_' | i18n}}</li>
-		<li>{{'_InstructionsStep1_' | i18n}}</li>
+		<li>{{'_InstructionsStep2_' | i18n}}</li>
+		<li>{{'_InstructionsStep3_' | i18n}}</li>
 		</ol>
-		<p>{{'_InstructionsNote_' | i18n}}</p>
-		
-		
-		<div class="form-group">
-			<a class="btn btn-primary" ng-click="nextStep()">{{'_NextButton_' | i18n}}</a>
-		</div>
-
+		<hr class="diliver"/>
 	</div>
+	<!-- move the footer content out of device-container -->
+	<p class="device-tips">{{'_InstructionsNote_' | i18n}}</p>
+	<div class="form-group">
+		<a class="btn btn-next" ng-click="nextStep()">{{'_NextButton_' | i18n}}</a>
+	</div>
+	<!-- Modified By S End -->
 </div>
