@@ -1,9 +1,11 @@
 <div class="row profile">
 	<div class="profile-container">
-		<h2 class="title">{{'_CreateRuleProfileRestrictions_' | i18n}}</h2>
-		<p>{{'_CreateRuleProfileRestrictionsNote_' | i18n}}</p>
-		
+		<div class="inner-container">
+			<h2 class="title">{{'_CreateRuleProfileRestrictions_' | i18n}}</h2>
+			<p>{{'_CreateRuleProfileRestrictionsNote_' | i18n}}</p>
+		</div>	
 		<form role="form">		
+			<div class="inner-container-bg">
 			<h4>{{'_SelectProfile_' | i18n}}</h4>
 			<div class="form-group">
 				<div class="btn-group dropdown-select" dropdown>
@@ -18,55 +20,73 @@
 				</div>
 				<p class="hint">{{selectedOption.description}}</p>
 			</div>
-			
-			<div class="form-group">	
+			</div>
+			<div class="form-group form-restrictions">	
 			<!-- profile restrictions -->
-			<h5 ng-click="restrictionCollapsed()">{{'_ProfileRestrictions_' | i18n}}</h5>
-			<div collapse="isRestrictionCollapsed">
-				<div class="form-group" ng-repeat="restriction in selectedOption.restrictions">
-					<div>{{restriction.label}}</div>
-					<div class="btn-group">
-						<label class="btn btn-success" ng-model="restriction.enabled" btn-radio="true" uncheckable>{{'_RadioButtonOn_' | i18n}}</label>
-						<label class="btn btn-success" ng-model="restriction.enabled" btn-radio="false" uncheckable>{{'_RadioButtonOff_' | i18n}}</label>
+			<div class="inner-container">
+				<h5 ng-click="restrictionCollapsed()">
+					<span class="icon-h icon-restrictions"></span>
+					<span class="substitle-h">{{'_ProfileRestrictions_' | i18n}}</span>
+					<span class="caret"></span>
+				</h5>
+				<div collapse="isRestrictionCollapsed">
+					<div class="form-group restriction-item" ng-repeat="restriction in selectedOption.restrictions">
+						<div class="switch-label">{{restriction.label}}</div>
+						<div class="btn-group re-switch">
+							<label class="btn btn-success" ng-model="restriction.enabled" btn-radio="true" uncheckable>{{'_RadioButtonOn_' | i18n}}</label>
+							<label class="btn btn-success" ng-model="restriction.enabled" btn-radio="false" uncheckable>{{'_RadioButtonOff_' | i18n}}</label>
+						</div>
 					</div>
-				</div>
 
-			</div>	
+				</div>
+			</div>
+			</div>			
 			<!-- profile ratings -->
-			<h5 ng-click="ratingCollapsed()">{{'_ProfileRatings_' | i18n}}</h5>
-			<div collapse="isRatingCollapsed">
-				<div class="form-group" ng-repeat="rating in selectedOption.ratings">
-					<div>{{rating.label}}</div>
-					<div class="btn-group dropdown-select" dropdown>
-						<button type="button" class="btn dropdownWords">{{rating.selected}} </button>
-						<button type="button" class="btn dropdown-toggle dropdownIcon">
-						   <span class="caret"></span>
-						   <span class="sr-only"></span>
-						 </button>
-						 <ul class="dropdown-menu">		
-							<li ng-repeat="opt in rating.options" ng-click="updateRatingOption(rating, $index)">{{opt}}</li>
-						</ul>
+			<div class="inner-container">
+				<h5 ng-click="ratingCollapsed()">
+					<span class="icon-h icon-rating"></span>
+					<span class="substitle-h">{{'_ProfileRatings_' | i18n}}</span>
+					<span class="caret"></span>
+				</h5>
+				<div collapse="isRatingCollapsed">
+					<div class="form-group restriction-item" ng-repeat="rating in selectedOption.ratings">
+						<div class="switch-label">{{rating.label}}</div>
+						<div class="btn-group dropdown-select" dropdown>
+							<button type="button" class="btn dropdownWords">{{rating.selected}} </button>
+							<button type="button" class="btn dropdown-toggle dropdownIcon">
+							   <span class="caret"></span>
+							   <span class="sr-only"></span>
+							 </button>
+							 <ul class="dropdown-menu">		
+								<li ng-repeat="opt in rating.options" ng-click="updateRatingOption(rating, $index)">{{opt}}</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</div>	
+				</div>	
+			</div>
 			<!-- advanced settings -->
-			<h5 ng-click="advancedCollapsed()">{{'_AdvancedSettings_' | i18n}}</h5>
-			<div collapse="isAdvanceCollapsed">
-				<div class="form-group" ng-repeat="setting in selectedOption.advanced">
-					<div>{{setting.label}}</div>
-					<div class="btn-group">
-						<label class="btn btn-success" ng-model="setting.enabled" btn-radio="true" uncheckable>{{'_RadioButtonOn_' | i18n}}</label>
-						<label class="btn btn-success" ng-model="setting.enabled" btn-radio="false" uncheckable>{{'_RadioButtonOff_' | i18n}}</label>
+			<div class="inner-container">
+				<h5 ng-click="advancedCollapsed()">
+					<span class="icon-h icon-adsetting"></span>
+					<span class="substitle-h">{{'_AdvancedSettings_' | i18n}}</span>
+					<span class="caret"></span>
+				</h5>
+				<div collapse="isAdvanceCollapsed">
+					<div class="form-group restriction-item" ng-repeat="setting in selectedOption.advanced">
+						<div class="switch-label">{{setting.label}}</div>
+						<div class="btn-group re-switch">
+							<label class="btn btn-success" ng-model="setting.enabled" btn-radio="true" uncheckable>{{'_RadioButtonOn_' | i18n}}</label>
+							<label class="btn btn-success" ng-model="setting.enabled" btn-radio="false" uncheckable>{{'_RadioButtonOff_' | i18n}}</label>
+						</div>
 					</div>
-				</div>
-			</div>	
-			
+				</div>	
+			</div>
 			<div class="form-group">
 				<a class="btn btn-primary" ng-click="resetProfile()">{{'_ResetButton_' | i18n}}</a>
 			</div>
 
 			<div class="form-group">
-				<a class="btn btn-primary" ng-click="nextStep()">{{'_NextButton_' | i18n}}</a>
+				<a class="btn btn-primary btn-next" ng-click="nextStep()">{{'_NextButton_' | i18n}}</a>
 			</div>
 			
 		</form>

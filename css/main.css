@@ -899,5 +899,174 @@ h4.device-greeting{
 	color: #bfbfbf;
 }
 /* Add By S End*/
-/*modify test -- R again*/
+/* Add By R Start */
+.profile-container {
+	background: #f7f7f7 url("../img/gear.png") repeat-x top left;
+}
+.profile-container p {
+	color: #999;
+}
+.inner-container {
+	background: #fff;
+	border-top: #eee 1px solid;
+	border-bottom: #eee 1px solid;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 5px;
+}
+.profile-container h4 {
+	color: #00C098;
+	font-weight: normal;
+}
+.form-restrictions {
+	border-top: #eee 1px solid;
+}
+.icon-restrictions {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: url("../img/tempicon.png") no-repeat top center;
+}
+.inner-container h5 {
+	display: table;
+	width: 100%;
+	padding: 0 15px;
+}
+h5 span {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	
+}
+.icon-h {
+	display: table-cell;
+}
+h5 .icon-restrictions, h5 .icon-rating, h5 .icon-adsetting {
+	/*to remove later*/
+	background: url("../img/tempicon.png") no-repeat top center;
+}
+.restriction-item {
+	
+}
+.inner-container-bg {
+	padding: 5px 15px 10px 15px;
+}
+.inner-container-bg h4 {
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+h5 .substitle-h {
+	margin-left: 5px;
+	width: inherit;
+}
+.inner-container .caret, .inner-container-bg .caret {
+	border-top: 11.5px solid;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+}
+h5 .caret {
+	position: absolute;
+	right: 25px;
+	margin-top: -14px;
+}
+.inner-container-bg .form-group, .inner-container-bg p {
+	margin: 0;
+}
 
+.inner-container-bg .dropdown-select {
+	margin-bottom: 5px;
+}
+.dropdown-select .dropdownWords {
+	background: #fff;
+	border: #eee 1px solid;
+	width: 100%;
+	text-align: left;
+}
+.dropdown-select .dropdownIcon {
+	position: absolute;
+	right: 0;
+}
+.btn-group>.btn+.dropdown-toggle {
+	padding-right: 8px;
+	padding-left: 8px;
+	border: #eee 1px solid;
+	border-left: #fff;
+}
+.inner-container-bg .dropdownIcon {
+	background: #fff;
+}
+.dropdown-select .caret {
+	margin-right: 5px;
+}
+.inner-container .dropdown-menu, .inner-container-bg .dropdown-menu {
+	width: 100%;
+}
+.dropdown-menu li {
+	padding-left: 12px;
+}
+.dropdown-select:hover {
+	background:#fff;
+}
+.dropdownWords:hover  {
+	background:none;
+}
+.collapse>.restriction-item:last-child, .collapse>.restriction-item:not(:last-child)  {
+	margin: 0;
+	height: 30px;
+	padding: 5px 10px;
+	display: table;
+	width: 100%;
+}
+.collapse>.restriction-item:not(:last-child)  {
+	border-bottom: #eee 1px solid;
+}
+.collapse>.restriction-item:first-child  {
+	border-top: #eee 1px solid;
+}
+.re-switch {
+	position: absolute;
+	display: table-cell;
+	right: 15px;
+	height: 20px;
+}
+.switch-label, .restriction-item .dropdown-select, .restriction-item .dropdownWords, .restriction-item .dropdownIcon  {
+	display: table-cell;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+.re-switch label {
+	padding: 0;
+	height: 20px;
+}
+.restriction-item {
+	height: 30px;
+}
+.restriction-item .dropdown-select {
+	width: 160px;
+	/* position: absolute;
+	right: 25px; */
+	height: 30px;
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+}
+.restriction-item  .caret {
+	border-top: 8px solid;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	color: #fff;
+}
+.restriction-item  .dropdownWords {
+	height: 26px;
+}
+.restriction-item  .dropdownIcon {
+	padding-right: 7px;
+	padding-left: 7px;
+	background: #00C098;
+	border: #eee 1px solid;
+	border-left: #fff;
+	height: 26px;
+	width: 26px;
+}
+/* Add By R End */
